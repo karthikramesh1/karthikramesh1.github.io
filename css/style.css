@@ -1,0 +1,230 @@
+html{
+    font-family:sans-serif;
+    line-height:1.15;
+    -webkit-text-size-adjust:100%;
+    -webkit-tap-highlight-color:transparent
+}
+article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{
+    display:block
+}
+a,svg,path,rect{
+	-moz-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    -ms-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+    margin:0;
+    font-size:1rem;
+    line-height:1.5;
+    color:#313F47;
+}
+.banerHolder{
+	-webkit-overflow-scrolling: touch;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+}
+.banerHolder::before{
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-image: linear-gradient(60deg, rgba(255,165,150,0.502) 9%, rgba(0,228,255,0.353) 100%), url(../images/bg.jpg);
+    background-position: 0% 0%, center;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
+    background-attachment: scroll;
+    background-color: #FFFFFF;
+}
+.mainHolder{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.929);
+    border-radius: 0.375rem 0.375rem 0.375rem 0.375rem;
+    -moz-transition: opacity 1s ease 0s,-moz-transform 1s ease 0s;
+    -webkit-transition: opacity 1s ease 0s,-webkit-transform 1s ease 0s;
+    -ms-transition: opacity 1s ease 0s,-ms-transform 1s ease 0s;
+    transition: opacity 1s ease 0s,transform 1s ease 0s;
+    -moz-transform: perspective(1000px) rotateX(0deg);
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    -ms-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg);
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.mainCard{
+	padding: 3.125rem 2.5rem;
+	position: relative;
+}
+.dpHolder{
+	justify-content: center;
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.dpRow{
+    width: 120px;
+    height: 120px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.dpRow::before{
+	position:absolute;
+	left:0;
+	top:0;
+	content:'';
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(60deg, rgba(255,165,150,0.502) 9%, rgba(0,228,255,0.353) 100%);
+}
+.dpRow img{
+	width: 100%;
+}
+.descriptionHolder{
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.descriptionHolder{
+	
+}
+.descriptionHolder h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    width: calc(100% + 0.2rem);
+    font-size: 1.5em;
+    line-height: 1.5;
+	color: #313F47;
+	position: relative;
+}
+.descriptionHolder h2:after{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+	content: '';
+	width:100px;
+	height: 1px;
+	background-color: #C8CCCF;
+}
+.descriptionHolder p{
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+	letter-spacing: 0.225rem;
+    width: calc(100% + 0.225rem);
+    font-size: 0.75em;
+    line-height: 1.875;
+}
+.descriptionHolder p strong{
+	font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+	letter-spacing: 0.225rem;
+    width: calc(100% + 0.225rem);
+    font-size: 0.75em;
+    line-height: 1.875;
+}
+.socialMedia{
+	
+}
+.socialMedia a{
+    text-align: center;
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    border: solid 1px #C8CCCF;
+    margin: 2px 5px;
+}
+.socialMedia a svg{
+    width: 55%;
+    height: 55%;
+    margin: 0 auto;
+}
+.socialMedia a svg path,
+.socialMedia a svg rect{
+	fill: #C8CCCF;
+	-webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.socialMedia a:hover{
+	border: solid 1px #FF7496;
+}
+.socialMedia a:hover svg path,
+.socialMedia a:hover svg rect{
+	fill: #FF7496;
+}
+.socialMedia a,
+.socialMedia a svg,
+.socialMedia a svg path,
+.socialMedia a svg rect,
+.socialMedia a:hover svg path,
+.socialMedia a:hover svg rect{
+	-webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+

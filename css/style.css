@@ -227,4 +227,17 @@ body{
     -o-transition: all .4s;
     transition: all .4s;
 }
+@media(max-width:767px){
+.descriptionHolder h2{
+font-size:1.3em;
+}
+.socialMedia a{
+width:38px;
+height:38px;
+}
+.socialMedia a svg{
+width:50%;
+height:50%;
+}
+}
 
